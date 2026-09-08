@@ -1,73 +1,374 @@
-
 body {
+
     font-family: Arial, sans-serif;
+
     background-color: #f4f4f4;
+
     margin: 0;
+
     padding: 30px;
+
 }
 
-/* ID selector */
+
+/* =========================
+   ID selector
+   ========================= */
+
 #main-header {
+
     background-color: #2c3e50;
+
     color: white;
+
     text-align: center;
+
     padding: 30px;
+
     margin-bottom: 25px;
+
 }
 
-/* Element selector */
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
 
-/* Class selector */
-.expense-section {
-    background-color: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
+/* Week 2: Logo image */
 
-/* Class selector */
-.expenses-list {
-    background-color: #e8f5e9;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #c8e6c9;
-}
+#main-header img {
 
-/* Element selector */
-h2 {
-    color: #333;
-    margin-top: 0;
-}
-
-/* Class selector */
-.input-group {
-    margin-bottom: 15px;
-}
-
-/* Element selector */
-label {
     display: block;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+}
+
+
+/* =========================
+   Element selector
+   ========================= */
+
+h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================
+   Class selector
+   ========================= */
+
+.expense-section {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+/* =========================
+   Class selector
+   ========================= */
+
+.expenses-list {
+
+    background-color: #e8f5e9;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #c8e6c9;
+
+}
+
+
+/* =========================
+   Element selector
+   ========================= */
+
+h2 {
+
+    color: #333;
+
+    margin-top: 0;
+
+}
+
+
+/* =========================
+   Input group
+   ========================= */
+
+.input-group {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+   Element selector
+   ========================= */
+
+label {
+
+    display: block;
+
     margin-bottom: 5px;
+
     font-weight: bold;
+
 }
 
-/* Element selector */
-input {
+
+/* =========================
+   Input styling
+   ========================= */
+
+/* Advanced selector: :not() */
+
+input:not([type="submit"]) {
+
     width: 100%;
+
     max-width: 400px;
+
     padding: 10px;
+
     box-sizing: border-box;
+
     border: 1px solid #aaa;
+
     border-radius: 5px;
+
 }
 
-/* Element selector */
-input:focus {
+
+/* =========================
+   Select styling
+   ========================= */
+
+select {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+}
+
+
+/* =========================
+   Advanced selector: :focus
+   ========================= */
+
+input:focus,
+select:focus {
+
     outline: 2px solid #3498db;
+
 }
 
+
+/* =========================
+   Button
+   ========================= */
+
+button {
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    /* Required interactive property */
+
+    cursor: pointer;
+
+}
+
+
+/* Button hover */
+
+button:hover {
+
+    background-color: #34495e;
+
+}
+
+
+/* =========================
+   EXPENSE TABLE
+   ========================= */
+
+table {
+
+    width: 100%;
+
+    /* Required */
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+}
+
+
+/* Advanced selector:
+   Descendant selector */
+
+.expenses-list td {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+}
+
+
+/* Table headers */
+
+.expenses-list th {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    text-align: left;
+
+}
+
+
+/* =========================
+   Advanced selector:
+   Position pseudo-class
+   ========================= */
+
+.expenses-list tr:nth-child(even) {
+
+    background-color: #dff0e1;
+
+}
+
+
+/* =========================
+   Table row hover
+   ========================= */
+
+.expenses-list tbody tr:hover {
+
+    background-color: #c8e6c9;
+
+}
+
+
+/* =========================
+   Direct child selector
+   ========================= */
+
+/* Advanced CSS selector */
+
+.expense-section > h2 {
+
+    border-bottom: 2px solid #3498db;
+
+    padding-bottom: 10px;
+
+}
+
+
+/* =========================
+   Details / Summary
+   ========================= */
+
+.instructions-section {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+summary {
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: #2c3e50;
+
+}
+
+
+details p {
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   Multimedia section
+   ========================= */
+
+.multimedia-section {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-top: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+.multimedia-section iframe {
+
+    max-width: 100%;
+
+    border-radius: 5px;
+
+}
